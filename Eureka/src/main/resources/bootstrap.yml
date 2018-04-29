@@ -1,5 +1,7 @@
 server:
   port: ${PORT:8761}
+logging:
+  file: gateway-log
 
 eureka:
   instance:
@@ -11,3 +13,6 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enableSelfPreservation: false
+spring:
+  application:
+    name: Eureka
