@@ -12,7 +12,7 @@ public class ServiceController {
 
     @GetMapping("Welcome")
     public String welcome(){
-        return "Welcome to services 1";
+        return "Welcome to services 2 ";
     }
 
 

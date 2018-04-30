@@ -22,10 +22,10 @@ public class ServiceApplication {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.select()
-				.apis(RequestHandlerSelectors.basePackage("org.service"))
-				.paths(PathSelectors.any())
-				.build()
+				   .select()
+				   .apis(RequestHandlerSelectors.basePackage("org.service"))
+				   .paths(PathSelectors.any())
+				   .build()
 				;
 	}
 
